@@ -23,7 +23,8 @@ public class binary {
 
         int arr[] = {2,4,6,8,9,12,14,18};
         int key = 14;
-        int index = BinarSearch(arr, key);
-        System.out.println("Element found at index: " + index);
+    
+        int found = BinarSearch(arr, key);
+        System.out.println("Element found at index: " + found);
     }
 }
