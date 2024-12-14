@@ -12,7 +12,7 @@ public class diagonalsum {
     //         }
     //     }
     // }
-    for(int i=0; i<arr.length-1; i++){
+    for(int i=0; i<arr.length; i++){
         sum += arr[i][i];
       if( i!= arr.length-1-i){
         sum += arr[i][arr.length-i-1];
