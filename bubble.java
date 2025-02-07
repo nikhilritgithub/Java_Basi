@@ -1,6 +1,5 @@
 public class bubble {
-
-    public static void BubbleSort(int arr[]){
+    public static void bubbleSort(int arr[]){
         for(int i=0; i<arr.length-1; i++){
             for(int j=0; j<arr.length-1-i; j++){
                 if(arr[j] > arr[j+1]){
@@ -12,15 +11,11 @@ public class bubble {
         }
     }
 
-    public static void PrintArray(int arr[]){
-        for(int i=0; i<arr.length; i++){
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
-    }
     public static void main(String args[]){
-        int arr[] = {2,3,5,8,3,1,12,9};
-        BubbleSort(arr);
-        PrintArray(arr);
+      int arr[] = {4,5,9,12,6,3,8};
+      bubbleSort(arr);
+      for(int i=0; i<arr.length; i++){
+        System.out.print(arr[i]+ " ");
+      }
     }
 }
