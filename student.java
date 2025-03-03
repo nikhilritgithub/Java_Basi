@@ -17,7 +17,7 @@
             // TODO Auto-generated method stub
             return "Student Details:{name:"+name+", age:"+age+", roll number:"+rollNo+"}";
         }
-
+      
 
 
         public static void main(String args[]) {
