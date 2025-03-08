@@ -1,38 +1,49 @@
+import javax.security.auth.callback.ChoiceCallback;
+
 public class abstraction {
     public static void main(String args[]){
-        Dog max = new Dog();
-        max.run();
-        max.color();max.eat();
+     Cow c1 = new Cow();
+     c1.run();
+     c1.color();
 
-        Chicken chuja = new Chicken();
-        chuja.run();
+     Chicken ch = new Chicken();
+     ch.run();
+     ch.color();
+
     }
 }
 
 abstract class Animal{
-    void eat(){
-        System.out.println("animals are eating..");
-    }
+   String color;
 
-   abstract void run();
+   void eat(){   //non-abtract method
+    System.out.println("Animal is eating");
+   }
+
+   abstract void run(); // abstract method
    abstract void color();
 }
 
- class Dog extends Animal{
+class Cow extends Animal{
     void run(){
-        System.out.println("walk on 4 legs");
+        System.out.println("Run on 4 legs");
     }
+
     void color(){
-        System.out.println("color is white");
+        System.out.println("cow color is brown");
     }
-   // abstract void walk();
+
+    void type(){
+        System.out.println("Cow type is jersy");
+    }
 }
 
 class Chicken extends Animal{
-    void run(){
-        System.out.println("Run on 2 legs");
-    }
-    void color(){
-        System.out.println("Color is yellow");
-    }
+   void run(){
+    System.out.println("Run on 2 legs");
+   }
+
+   void color(){
+    System.out.println("Chicken color is yellow");
+   }
 }
