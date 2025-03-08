@@ -1,5 +1,5 @@
 public class Person {
-    
+
     private String name;
     private int age;
     private String id;
@@ -33,21 +33,21 @@ public class Person {
     public void setId(String id) {
         this.id = id;
     }
-
+  
     @Override
     public String toString() {
         return "Person [name=" + name + ", age=" + age + ", id=" + id + "]";
     }
 
-    public static void main(String args[]){
-        Person p1 =new Person("Nikhil", 20, "001");
-        Person p2 =new Person("Nikhil", 20, "001");
+    public static void main(String args[]) {
+        Person p1 = new Person("Nikhil", 20, "001");
+        Person p2 = new Person("Nikhil", 20, "001"); 
 
-        if(p1.equals(p2)){
+        if (p1.equals(p2)) {
             System.out.println("Equals");
-        }else{
+        } else {
             System.out.println("not equals");
         }
-    }   
-    
+    }
+
 }
