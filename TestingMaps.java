@@ -14,5 +14,6 @@ public class TestingMaps {
         System.out.println(map.containsKey("Rohit"));
         System.out.println(map.remove("Dhoni"));
         System.out.println(map.size());
+        system.out.println(mao);
     }
 }
