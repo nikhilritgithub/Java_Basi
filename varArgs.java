@@ -15,7 +15,6 @@ public static void sentence(String ...elements){
     System.out.println();
 }
 
-
     public static void main(String args[]){
         System.out.println(sum(3,4));
         System.out.println(sum(3,4,5));
