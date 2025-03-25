@@ -10,7 +10,7 @@
       int b = sc.nextInt();
      
 
-      try{
+      try{ 
         int result = a / b;
         System.out.printf("Result is %d",result);
       }catch(ArithmeticException exception){
