@@ -1,34 +1,24 @@
 public class multiInherit {
     public static void main(String args[]){
-        Dog max = new Dog();
-            max.eat();
-        max.color = "white";
-        max.weep();
-        System.out.println(max.color);
-        
+    Bear bhalu = new Bear();
+    bhalu.eat();
+    bhalu.sharp();
     }
 }
 
- class Animal{
-    String color;
-
-    void eat(){
-        System.out.println("Eating....");
-    }
-    void weep(){
-        System.out.println("Weeping....");
-    }
-    void run(){
-        System.out.println("Running");
-    }
+interface Herbivore{
+    void eat();
 }
 
+interface Carnivore{
+    void sharp();
+}
 
- class Mammal extends Animal{
-    int legs;
- }
-
-
- class Dog extends Mammal{
-    String size;
- }
+class Bear implements Herbivore, Carnivore{
+    public void eat(){
+        System.out.println("eat only meat");
+    }
+    public void sharp(){
+        System.out.println("Have sharpen teeth");
+    }
+}
