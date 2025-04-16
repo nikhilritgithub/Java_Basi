@@ -1,7 +1,7 @@
-public class star {
+public class star{
 
-    public static void halfTri(int n){
-        for(int i=1; i<=n; i++){
+    public static void star1(int num){
+        for(int i=1; i<=num; i++){
             for(int j=1; j<=i; j++){
                 System.out.print("*");
             }
@@ -9,16 +9,37 @@ public class star {
         }
     }
 
-    public static void invertedStar(int n){
-        for(int i=1; i<=n; i++){
-            for(int j=1; j<=n-i+1; j++){
+    public static void star2(int num){
+        for(int i=1; i<=num; i++){
+            for(int j=1; j<=num-i+1; j++){
                 System.out.print("*");
             }
             System.out.println();
         }
     }
+
+    public static void star3(int n){
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=n-i; j++){
+                System.out.print(" ");
+            }
+            for(int j=1; j<=i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void star4(int n){
+        for(int i=1; i<=n; i++){
+            for(int j=n; j>=i; j--){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String args[]){
-       halfTri(5);
-       invertedStar(5);
+        star4(5);
     }
 }
